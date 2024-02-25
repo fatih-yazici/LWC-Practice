@@ -1,0 +1,10 @@
+.mydiv{
+    background-color: aqua;
+    margin: 10px;
+    border-color: blue;
+    border-style: dashed;
+}
+.score{
+    color: red;
+    padding-left: 10px;
+}

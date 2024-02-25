@@ -1,0 +1,34 @@
+<template>
+    <template if:true={display}>
+        <lightning-card title="Student Information">
+            <div>
+                <lightning-input label="First Name" value={firstName} onchange={firstNameHandler}></lightning-input>
+                <lightning-input label="Last Name" value={lastName} onchange={lastNameHandler}></lightning-input>
+                <lightning-input label="Grade" value={grade} onchange={gradeHandler}></lightning-input>
+                <lightning-input label="Roll Number" value={rollNumber} onchange={rollNumberHandler}></lightning-input>
+
+                <lightning-button label="Save" onclick={saveButtonHandler}></lightning-button>
+            </div>
+
+        </lightning-card>
+
+    </template>
+
+    <template if:false={display}>
+        <lightning-card title="Student Information">
+            <div>
+                <p style= font-weight:bold>First Name: {firstName}</p>
+                <p style= margin-left:50px>Last Name: {lastName}</p>
+                <p style="border: 20px" >Grade: {grade}</p>
+                <p style= "background-color: rgb(48, 222, 103)">Roll Number: {rollNumber}</p>
+                <img src="https://images.freeimages.com/vme/images/1/7/178682/green_checkmark_clip_art_preview.jpg">
+
+            </div>
+
+
+        </lightning-card>
+
+        
+
+    </template>
+</template>
